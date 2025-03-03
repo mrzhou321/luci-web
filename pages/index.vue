@@ -1,7 +1,8 @@
 <template>
-    <div class="website">
+    <div class="website flex-c flex-col">
       <Header />
-      <main class="main">
+      <div class="main-container flex-c">
+        <main class="main">
         <h1>{{ $t('home.welcome') }}</h1>
         <section>
           <h2>{{ $t('company.name') }}</h2>
@@ -13,6 +14,7 @@
           <ProductList :products="$tm('products.productList')" />
         </section>
       </main>
+      </div>
       <Footer />
     </div>
   </template>
@@ -27,11 +29,19 @@
   
   <style lang="scss" scoped>
   .website{
-    height: 100vh;
-    width: 100vw;
-    .main{
+    height: 100%;
+    width: 100%;
+    color: white;
+    .main-container{
       width: 100%;
-      height: calc(100% - 120px);
+      height: calc(100% - 160px);
+      background-image: url(../assets/img/bg.webp);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .main{
+      width: 1000px;  
     }
   }
   

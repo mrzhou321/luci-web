@@ -1,5 +1,5 @@
 <template>
-    <footer>
+    <footer class="w-full">
       <div class="footer-links">
         <a href="https://www.chemicalonline.com" target="_blank">中国化工网</a>
         <a href="https://www.environline.com" target="_blank">环保在线</a>
@@ -14,14 +14,15 @@
   
   <style scoped>
   footer {
-    height: 60px;
+    height: 80px;
     text-align: center;
     padding: 20px 0;
     border-top: 1px solid #ccc;
+    background-color: #bbb;
   }
   .footer-links a {
     margin: 0 10px;
-    color: #333;
+    color: white;
     text-decoration: none;
   }
   </style>

@@ -37,14 +37,15 @@
   <style scoped>
   header{
     width: 100%;
-    padding: 0 20px;
     background-color: #716E66;
   }
   .logo{
     width: 1000px;
+    padding: 0 20px;
   }
   nav {
     height: 44px;
+    background-color: #549A4C;
   }
   ul {
     width: 1000px;

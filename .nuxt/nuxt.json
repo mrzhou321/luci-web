@@ -1,9 +1,9 @@
 {
-  "_hash": "0yrqiOLjUFj-YqmJUxC_oiFOIfrjtuAMP8zb1IXsSDM",
+  "_hash": "YjXcXocjnuzUddq1QgPHjE2HnaZLo3U98YlWq7fxpoU",
   "project": {
-    "rootDir": "D:/Works/nuxt3-luci-env"
+    "rootDir": "E:/za-workspace/learn/luci-web"
   },
   "versions": {
-    "nuxt": "3.15.4"
+    "nuxt": "3.16.0"
   }
 }

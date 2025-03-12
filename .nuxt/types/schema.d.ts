@@ -159,6 +159,8 @@ declare module 'nuxt/schema' {
          generatedLocaleFilePathFormat: string,
 
          alternateLinkCanonicalQueries: boolean,
+
+         hmr: boolean,
       },
 
       multiDomainLocales: boolean,

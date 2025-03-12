@@ -1,1 +1,17 @@
+
+# 忽略 Nuxt 生成的临时文件
+.nuxt
+.output
 node_modules
+dist
+
+# 环境变量文件
+.env
+.env.local
+.env.*.local
+
+# 其他可能的 IDE/编辑器文件
+*.log
+.vscode
+.idea
+.DS_Store

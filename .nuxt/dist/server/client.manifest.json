@@ -7,12 +7,12 @@
     "module": true,
     "resourceType": "script"
   },
-  "D:/Works/nuxt3-luci-env/node_modules/nuxt/dist/app/entry.js": {
+  "/Users/paulchou/Project/work/luci-web/node_modules/.pnpm/nuxt@3.16.0_@types+node@18.19.80_eslint@9.22.0_rollup@4.35.0_sass-embedded@1.85.1_typescript@5.8.2_vite@6.2.1/node_modules/nuxt/dist/app/entry.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
     "isEntry": true,
-    "file": "D:/Works/nuxt3-luci-env/node_modules/nuxt/dist/app/entry.js"
+    "file": "/Users/paulchou/Project/work/luci-web/node_modules/.pnpm/nuxt@3.16.0_@types+node@18.19.80_eslint@9.22.0_rollup@4.35.0_sass-embedded@1.85.1_typescript@5.8.2_vite@6.2.1/node_modules/nuxt/dist/app/entry.js"
   }
 }

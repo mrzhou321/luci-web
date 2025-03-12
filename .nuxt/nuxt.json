@@ -1,9 +1,9 @@
 {
-  "_hash": "0yrqiOLjUFj-YqmJUxC_oiFOIfrjtuAMP8zb1IXsSDM",
+  "_hash": "QG3wuFuPget4z4ji7XqBzdLtfj_86n1wi4Z_jUuo6Jo",
   "project": {
-    "rootDir": "D:/Works/nuxt3-luci-env"
+    "rootDir": "/Users/paulchou/Project/work/luci-web"
   },
   "versions": {
-    "nuxt": "3.15.4"
+    "nuxt": "3.16.0"
   }
 }

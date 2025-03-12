@@ -1,6 +1,14 @@
 <template>
-    <header class="flex-c flex-col">
-      <div class="logo flex justify-between items-center pt-4">
+    <header class="flex-c flex-col main-container">
+      <div class="flex justify-between w-full">
+        <div>
+          {{ $t('header.welcome') }}
+        </div>
+        <div>
+           <img src="assets/img/lang.png" />
+        </div>
+      </div>
+      <div class=" flex justify-between items-center pt-4">
         <div class="flex-c">
           <img src="../assets/img/logo.png" class="size-12 mr-4"/>
           <span class="text-xl font-weight">{{$t('company.name') }}</span>
@@ -25,7 +33,7 @@
       </nav>
     </header>
   </template>
-  
+
   <script lang="ts" setup>
   import { useI18n } from 'vue-i18n'
   const { locale } = useI18n()
@@ -33,11 +41,10 @@
     locale.value = lang
   }
   </script>
-  
+
   <style scoped>
   header{
-    width: 100%;
-    background-color: #716E66;
+
   }
   .logo{
     width: 1000px;
@@ -59,4 +66,3 @@
     margin-left: 10px;
   }
   </style>
-  

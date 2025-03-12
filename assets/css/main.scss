@@ -18,6 +18,10 @@
   .navbar-bg-hover {
     @apply dark:text-white dark:hover:!bg-[#242424];
   }
+  .main-container{
+    width: 1200px;
+    position: relative;
+  }
 }
 
 /* 自定义全局样式 */

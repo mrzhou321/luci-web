@@ -1,7 +1,7 @@
 <template>
     <div class="website flex-c flex-col">
       <Header />
-      <div class="main-container flex-c">
+      <div class="middle flex-c">
         <main class="main">
         <h1>{{ $t('home.welcome') }}</h1>
         <section>
@@ -18,21 +18,22 @@
       <Footer />
     </div>
   </template>
-  
+
   <script lang="ts" setup>
    import Header from '~/components/Header.vue'
    import Footer from '~/components/Footer.vue'
    import ProductList from '~/components/ProductList.vue'
-   const { t, rt } = useI18n(); 
+   const { t, rt } = useI18n();
    console.log(rt('news.companyNews'));
   </script>
-  
+
   <style lang="scss" scoped>
   .website{
     height: 100%;
     width: 100%;
-    color: white;
-    .main-container{
+    color: #666666;
+    background:#EEE;
+    .middle{
       width: 100%;
       height: calc(100% - 160px);
       background-image: url(../assets/img/bg.webp);
@@ -41,8 +42,8 @@
       background-repeat: no-repeat;
     }
     .main{
-      width: 1000px;  
+      width: 1000px;
     }
   }
-  
+
   </style>

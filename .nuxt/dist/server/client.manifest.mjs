@@ -1,0 +1,1 @@
+export { default } from "file:///E:/za-workspace/learn/luci-web/node_modules/.pnpm/@nuxt+vite-builder@3.16.0_@types+node@18.19.80_eslint@9.22.0_jiti@2.4.2__magicast@0.3.5_optio_2qpft6zkpwcphaabqilgrvicqi/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"

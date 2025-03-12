@@ -1,4 +1,12 @@
 export default {
+    header:{
+      welcome: '欢迎访问我们的网站!',
+      contact: '联系我们',
+      languageSwitcher: {
+        zh: '中文',
+        en: 'English'
+      }
+    },
     nav: {
       home: '首页',
       about: '公司简介',

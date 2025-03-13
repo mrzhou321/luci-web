@@ -2,6 +2,7 @@ export default {
     header:{
       welcome: '欢迎访问我们的网站!',
       contact: '联系我们',
+      search: '请输入关键词',
       languageSwitcher: {
         zh: '中文',
         en: 'English'

@@ -1,15 +1,14 @@
 import { defineNuxtConfig } from 'nuxt/config'
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
   typescript: {
     strict: true
   },
-
   modules: [
     '@nuxtjs/i18n',
-    '@nuxtjs/tailwindcss'
+    '@nuxt/ui'
   ],
-
   i18n: {
     locales: [
       { code: 'zh', iso: 'zh-CN', file: 'zh-CN.js', name: '中文' },
@@ -17,13 +16,20 @@ export default defineNuxtConfig({
     ],
     defaultLocale: 'zh',
     lazy: true,
-    langDir: 'locales/',
-    vueI18n: "./i18n.config.ts"
+    langDir: 'locales/'
   },
 
   css: [
-    '~/assets/css/main.scss'
+    '~/assets/css/main.css'
   ],
+  ui: {
+    fonts: false
+  },
+  vite: {
+    plugins: [
+      tailwindcss(),
+    ],
+  },
+  compatibilityDate: '2025-02-24',
 
-  compatibilityDate: '2025-02-24'
 })

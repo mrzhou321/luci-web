@@ -2,18 +2,9 @@
     <div class="website flex-c flex-col">
       <Header />
       <div class="middle flex-c">
-        <main class="main">
-        <h1>{{ $t('home.welcome') }}</h1>
-        <section>
-          <h2>{{ $t('company.name') }}</h2>
-          <p>{{ $t('company.enName') }}</p>
-        </section>
-        <section>
-          <h2>{{ $t('nav.products') }}</h2>
-          <!-- 调用组件展示产品列表 -->
-          <ProductList :products="$tm('products.productList')" />
-        </section>
-      </main>
+        <UCarousel v-slot="{ item }" dots :items="items" class="w-full max-w-xs mx-auto">
+          <img :src="item" width="320" height="320" class="rounded-lg">
+        </UCarousel>
       </div>
       <Footer />
     </div>
@@ -24,12 +15,19 @@
    import Footer from '~/components/Footer.vue'
    import ProductList from '~/components/ProductList.vue'
    const { t, rt } = useI18n();
-   console.log(rt('news.companyNews'));
+   const items = [
+     'https://picsum.photos/640/640?random=1',
+     'https://picsum.photos/640/640?random=2',
+     'https://picsum.photos/640/640?random=3',
+     'https://picsum.photos/640/640?random=4',
+     'https://picsum.photos/640/640?random=5',
+     'https://picsum.photos/640/640?random=6'
+   ];
   </script>
 
   <style lang="scss" scoped>
   .website{
-    height: 100%;
+    height: 100vh;
     width: 100%;
     color: #666666;
     background:#EEE;

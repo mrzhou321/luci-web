@@ -10,15 +10,15 @@ export const localeCodes =  [
 export const localeLoaders = {
   zh: [
     {
-      key: "locale_zh_45CN_46js_a7862eba",
-      load: () => import("#nuxt-i18n/a7862eba" /* webpackChunkName: "locale_zh_45CN_46js_a7862eba" */),
+      key: "locale_zh_45CN_46js_77f77c9c",
+      load: () => import("#nuxt-i18n/77f77c9c" /* webpackChunkName: "locale_zh_45CN_46js_77f77c9c" */),
       cache: true
     }
   ],
   en: [
     {
-      key: "locale_en_45US_46js_4db890fd",
-      load: () => import("#nuxt-i18n/4db890fd" /* webpackChunkName: "locale_en_45US_46js_4db890fd" */),
+      key: "locale_en_45US_46js_c1ce2725",
+      load: () => import("#nuxt-i18n/c1ce2725" /* webpackChunkName: "locale_en_45US_46js_c1ce2725" */),
       cache: true
     }
   ]
@@ -60,7 +60,7 @@ export const nuxtI18nOptions = {
       iso: "zh-CN",
       name: "中文",
       files: [
-        "E:/za-workspace/learn/luci-web/i18n/locales/zh-CN.js"
+        "/Users/paulchou/Project/work/luci-web/i18n/locales/zh-CN.js"
       ]
     },
     {
@@ -68,7 +68,7 @@ export const nuxtI18nOptions = {
       iso: "en-US",
       name: "English",
       files: [
-        "E:/za-workspace/learn/luci-web/i18n/locales/en-US.js"
+        "/Users/paulchou/Project/work/luci-web/i18n/locales/en-US.js"
       ]
     }
   ],
@@ -110,7 +110,7 @@ export const normalizedLocales = [
     name: "中文",
     files: [
       {
-        path: "E:/za-workspace/learn/luci-web/i18n/locales/zh-CN.js",
+        path: "/Users/paulchou/Project/work/luci-web/i18n/locales/zh-CN.js",
         cache: undefined
       }
     ]
@@ -121,7 +121,7 @@ export const normalizedLocales = [
     name: "English",
     files: [
       {
-        path: "E:/za-workspace/learn/luci-web/i18n/locales/en-US.js",
+        path: "/Users/paulchou/Project/work/luci-web/i18n/locales/en-US.js",
         cache: undefined
       }
     ]

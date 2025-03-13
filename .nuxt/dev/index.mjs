@@ -1,38 +1,38 @@
 import process from 'node:process';globalThis._importMeta_={url:import.meta.url,env:process.env};import { tmpdir } from 'node:os';
+import { getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, getRequestURL, getResponseHeader, defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, getResponseStatus, setHeaders, sendRedirect, proxyRequest, createError, getQuery as getQuery$1, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getRouterParam, readBody, getResponseStatusText } from 'file:///Users/paulchou/Project/work/luci-web/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs';
 import { Server } from 'node:http';
 import { resolve, dirname, join } from 'node:path';
 import nodeCrypto from 'node:crypto';
 import { parentPort, threadId } from 'node:worker_threads';
-import { getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, getRequestURL, getResponseHeader, defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, getResponseStatus, setHeaders, sendRedirect, proxyRequest, createError, getQuery as getQuery$1, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getRouterParam, readBody, getResponseStatusText } from 'file://E:/za-workspace/learn/luci-web/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs';
-import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file://E:/za-workspace/learn/luci-web/node_modules/.pnpm/vue-bundle-renderer@2.1.1/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import destr from 'file://E:/za-workspace/learn/luci-web/node_modules/.pnpm/destr@2.0.3/node_modules/destr/dist/index.mjs';
-import { createHead as createHead$1, propsToString, renderSSRHead } from 'file://E:/za-workspace/learn/luci-web/node_modules/.pnpm/unhead@2.0.0-rc.10/node_modules/unhead/dist/server.mjs';
-import { isVNode, toValue, isRef } from 'file://E:/za-workspace/learn/luci-web/node_modules/.pnpm/vue@3.5.13_typescript@5.8.2/node_modules/vue/index.mjs';
-import { walkResolver } from 'file://E:/za-workspace/learn/luci-web/node_modules/.pnpm/unhead@2.0.0-rc.10/node_modules/unhead/dist/utils.mjs';
-import { renderToString } from 'file://E:/za-workspace/learn/luci-web/node_modules/.pnpm/vue@3.5.13_typescript@5.8.2/node_modules/vue/server-renderer/index.mjs';
-import { klona } from 'file://E:/za-workspace/learn/luci-web/node_modules/.pnpm/klona@2.0.6/node_modules/klona/dist/index.mjs';
-import defu, { defuFn } from 'file://E:/za-workspace/learn/luci-web/node_modules/.pnpm/defu@6.1.4/node_modules/defu/dist/defu.mjs';
-import { snakeCase } from 'file://E:/za-workspace/learn/luci-web/node_modules/.pnpm/scule@1.3.0/node_modules/scule/dist/index.mjs';
-import { stringify, uneval } from 'file://E:/za-workspace/learn/luci-web/node_modules/.pnpm/devalue@5.1.1/node_modules/devalue/index.js';
-import { DeprecationsPlugin, PromisesPlugin, TemplateParamsPlugin, AliasSortingPlugin } from 'file://E:/za-workspace/learn/luci-web/node_modules/.pnpm/unhead@2.0.0-rc.10/node_modules/unhead/dist/plugins.mjs';
-import { createHooks } from 'file://E:/za-workspace/learn/luci-web/node_modules/.pnpm/hookable@5.5.3/node_modules/hookable/dist/index.mjs';
-import { createFetch, Headers as Headers$1 } from 'file://E:/za-workspace/learn/luci-web/node_modules/.pnpm/ofetch@1.4.1/node_modules/ofetch/dist/node.mjs';
-import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file://E:/za-workspace/learn/luci-web/node_modules/.pnpm/node-mock-http@1.0.0/node_modules/node-mock-http/dist/index.mjs';
+import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file:///Users/paulchou/Project/work/luci-web/node_modules/.pnpm/vue-bundle-renderer@2.1.1/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import destr from 'file:///Users/paulchou/Project/work/luci-web/node_modules/.pnpm/destr@2.0.3/node_modules/destr/dist/index.mjs';
+import { createHead as createHead$1, propsToString, renderSSRHead } from 'file:///Users/paulchou/Project/work/luci-web/node_modules/.pnpm/unhead@2.0.0-rc.9/node_modules/unhead/dist/server.mjs';
+import { isVNode, toValue, isRef } from 'file:///Users/paulchou/Project/work/luci-web/node_modules/.pnpm/vue@3.5.13_typescript@5.8.2/node_modules/vue/index.mjs';
+import { walkResolver } from 'file:///Users/paulchou/Project/work/luci-web/node_modules/.pnpm/unhead@2.0.0-rc.9/node_modules/unhead/dist/utils.mjs';
+import { renderToString } from 'file:///Users/paulchou/Project/work/luci-web/node_modules/.pnpm/vue@3.5.13_typescript@5.8.2/node_modules/vue/server-renderer/index.mjs';
+import { createHooks } from 'file:///Users/paulchou/Project/work/luci-web/node_modules/.pnpm/hookable@5.5.3/node_modules/hookable/dist/index.mjs';
+import { createFetch, Headers as Headers$1 } from 'file:///Users/paulchou/Project/work/luci-web/node_modules/.pnpm/ofetch@1.4.1/node_modules/ofetch/dist/node.mjs';
+import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file:///Users/paulchou/Project/work/luci-web/node_modules/.pnpm/node-mock-http@1.0.0/node_modules/node-mock-http/dist/index.mjs';
+import { klona } from 'file:///Users/paulchou/Project/work/luci-web/node_modules/.pnpm/klona@2.0.6/node_modules/klona/dist/index.mjs';
+import defu, { defuFn } from 'file:///Users/paulchou/Project/work/luci-web/node_modules/.pnpm/defu@6.1.4/node_modules/defu/dist/defu.mjs';
+import { snakeCase } from 'file:///Users/paulchou/Project/work/luci-web/node_modules/.pnpm/scule@1.3.0/node_modules/scule/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file:///Users/paulchou/Project/work/luci-web/node_modules/.pnpm/unstorage@1.15.0_db0@0.3.1_ioredis@5.6.0/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file:///Users/paulchou/Project/work/luci-web/node_modules/.pnpm/unstorage@1.15.0_db0@0.3.1_ioredis@5.6.0/node_modules/unstorage/drivers/fs.mjs';
+import { toRouteMatcher, createRouter } from 'file:///Users/paulchou/Project/work/luci-web/node_modules/.pnpm/radix3@1.1.2/node_modules/radix3/dist/index.mjs';
+import { getContext } from 'file:///Users/paulchou/Project/work/luci-web/node_modules/.pnpm/unctx@2.4.1/node_modules/unctx/dist/index.mjs';
+import { digest, hash as hash$1 } from 'file:///Users/paulchou/Project/work/luci-web/node_modules/.pnpm/ohash@2.0.11/node_modules/ohash/dist/index.mjs';
 import { readFile } from 'node:fs/promises';
-import consola, { consola as consola$1 } from 'file://E:/za-workspace/learn/luci-web/node_modules/.pnpm/consola@3.4.0/node_modules/consola/dist/index.mjs';
-import { ErrorParser } from 'file://E:/za-workspace/learn/luci-web/node_modules/.pnpm/youch-core@0.3.2/node_modules/youch-core/build/index.js';
-import { Youch } from 'file://E:/za-workspace/learn/luci-web/node_modules/.pnpm/youch@4.1.0-beta.6/node_modules/youch/build/index.js';
-import { SourceMapConsumer } from 'file://E:/za-workspace/learn/luci-web/node_modules/.pnpm/source-map@0.7.4/node_modules/source-map/source-map.js';
+import consola, { consola as consola$1 } from 'file:///Users/paulchou/Project/work/luci-web/node_modules/.pnpm/consola@3.4.0/node_modules/consola/dist/index.mjs';
+import { ErrorParser } from 'file:///Users/paulchou/Project/work/luci-web/node_modules/.pnpm/youch-core@0.3.2/node_modules/youch-core/build/index.js';
+import { Youch } from 'file:///Users/paulchou/Project/work/luci-web/node_modules/.pnpm/youch@4.1.0-beta.6/node_modules/youch/build/index.js';
+import { SourceMapConsumer } from 'file:///Users/paulchou/Project/work/luci-web/node_modules/.pnpm/source-map@0.7.4/node_modules/source-map/source-map.js';
 import { AsyncLocalStorage } from 'node:async_hooks';
-import { getContext } from 'file://E:/za-workspace/learn/luci-web/node_modules/.pnpm/unctx@2.4.1/node_modules/unctx/dist/index.mjs';
-import { captureRawStackTrace, parseRawStackTrace } from 'file://E:/za-workspace/learn/luci-web/node_modules/.pnpm/errx@0.1.0/node_modules/errx/dist/index.js';
-import { basename } from 'file://E:/za-workspace/learn/luci-web/node_modules/.pnpm/pathe@2.0.3/node_modules/pathe/dist/index.mjs';
-import { getIcons } from 'file://E:/za-workspace/learn/luci-web/node_modules/.pnpm/@iconify+utils@2.3.0/node_modules/@iconify/utils/lib/index.mjs';
-import { digest, hash as hash$1 } from 'file://E:/za-workspace/learn/luci-web/node_modules/.pnpm/ohash@2.0.11/node_modules/ohash/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file://E:/za-workspace/learn/luci-web/node_modules/.pnpm/unstorage@1.15.0_db0@0.3.1_ioredis@5.6.0/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file://E:/za-workspace/learn/luci-web/node_modules/.pnpm/unstorage@1.15.0_db0@0.3.1_ioredis@5.6.0/node_modules/unstorage/drivers/fs.mjs';
-import { collections } from 'file://E:/za-workspace/learn/luci-web/.nuxt/nuxt-icon-server-bundle.mjs';
-import { toRouteMatcher, createRouter } from 'file://E:/za-workspace/learn/luci-web/node_modules/.pnpm/radix3@1.1.2/node_modules/radix3/dist/index.mjs';
+import { stringify, uneval } from 'file:///Users/paulchou/Project/work/luci-web/node_modules/.pnpm/devalue@5.1.1/node_modules/devalue/index.js';
+import { captureRawStackTrace, parseRawStackTrace } from 'file:///Users/paulchou/Project/work/luci-web/node_modules/.pnpm/errx@0.1.0/node_modules/errx/dist/index.js';
+import { basename } from 'file:///Users/paulchou/Project/work/luci-web/node_modules/.pnpm/pathe@2.0.3/node_modules/pathe/dist/index.mjs';
+import { getIcons } from 'file:///Users/paulchou/Project/work/luci-web/node_modules/.pnpm/@iconify+utils@2.3.0/node_modules/@iconify/utils/lib/index.mjs';
+import { collections } from 'file:///Users/paulchou/Project/work/luci-web/.nuxt/nuxt-icon-server-bundle.mjs';
+import { DeprecationsPlugin, PromisesPlugin, TemplateParamsPlugin, AliasSortingPlugin } from 'file:///Users/paulchou/Project/work/luci-web/node_modules/.pnpm/unhead@2.0.0-rc.9/node_modules/unhead/dist/plugins.mjs';
 
 const HASH_RE = /#/g;
 const AMPERSAND_RE = /&/g;
@@ -481,13 +481,13 @@ if (!window.__NUXT_DEVTOOLS_TIME_METRIC__) {
 window.__NUXT_DEVTOOLS_TIME_METRIC__.appInit = Date.now()
 `;
 
-const _2SFM5HaAdKOgPdSSJrVHjB8P33OcqorcUyuIOMRfeM = (function(nitro) {
+const _ScVDztDdilpEs1H2_o_nNfXym84_s6JDXMb_wd5Xlc = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script$1}<\/script>`);
   });
 });
 
-const rootDir = "E:/za-workspace/learn/luci-web";
+const rootDir = "/Users/paulchou/Project/work/luci-web";
 
 const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[],"style":[],"script":[],"noscript":[]};
 
@@ -506,7 +506,7 @@ const devReducers = {
   URL: (data) => data instanceof URL ? data.toString() : void 0
 };
 const asyncContext = getContext("nuxt-dev", { asyncContext: true, AsyncLocalStorage });
-const _H2yJHOwr1whQFtXUJnXkG9BxWMtFdzsXWFzW9xyWSk = (nitroApp) => {
+const _vwVWpUUHVan2feN3TSDFQDn5ZCYX87oJzFjEmwP9Es = (nitroApp) => {
   const handler = nitroApp.h3App.handler;
   nitroApp.h3App.handler = (event) => {
     return asyncContext.callAsync({ logs: [], event }, () => handler(event));
@@ -577,16 +577,16 @@ function onConsoleLog(callback) {
 
 const script = "\"use strict\";(()=>{const t=window,e=document.documentElement,c=[\"dark\",\"light\"],n=getStorageValue(\"localStorage\",\"nuxt-color-mode\")||\"system\";let i=n===\"system\"?u():n;const r=e.getAttribute(\"data-color-mode-forced\");r&&(i=r),l(i),t[\"__NUXT_COLOR_MODE__\"]={preference:n,value:i,getColorScheme:u,addColorScheme:l,removeColorScheme:d};function l(o){const s=\"\"+o+\"\",a=\"\";e.classList?e.classList.add(s):e.className+=\" \"+s,a&&e.setAttribute(\"data-\"+a,o)}function d(o){const s=\"\"+o+\"\",a=\"\";e.classList?e.classList.remove(s):e.className=e.className.replace(new RegExp(s,\"g\"),\"\"),a&&e.removeAttribute(\"data-\"+a)}function f(o){return t.matchMedia(\"(prefers-color-scheme\"+o+\")\")}function u(){if(t.matchMedia&&f(\"\").media!==\"not all\"){for(const o of c)if(f(\":\"+o).matches)return o}return\"light\"}})();function getStorageValue(t,e){switch(t){case\"localStorage\":return window.localStorage.getItem(e);case\"sessionStorage\":return window.sessionStorage.getItem(e);case\"cookie\":return getCookie(e);default:return null}}function getCookie(t){const c=(\"; \"+window.document.cookie).split(\"; \"+t+\"=\");if(c.length===2)return c.pop()?.split(\";\").shift()}";
 
-const _JeTinD75FSC9k1SCzzqmYABT5MZcnRYVGIkHZxIXQA = (function(nitro) {
+const _fladuDulrmg3udah7b7QPm5iyASgbQPFvQG_FZ58 = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script}<\/script>`);
   });
 });
 
 const plugins = [
-  _2SFM5HaAdKOgPdSSJrVHjB8P33OcqorcUyuIOMRfeM,
-_H2yJHOwr1whQFtXUJnXkG9BxWMtFdzsXWFzW9xyWSk,
-_JeTinD75FSC9k1SCzzqmYABT5MZcnRYVGIkHZxIXQA
+  _ScVDztDdilpEs1H2_o_nNfXym84_s6JDXMb_wd5Xlc,
+_vwVWpUUHVan2feN3TSDFQDn5ZCYX87oJzFjEmwP9Es,
+_fladuDulrmg3udah7b7QPm5iyASgbQPFvQG_FZ58
 ];
 
 const inlineAppConfig = {
@@ -905,7 +905,7 @@ const _inlineRuntimeConfig = {
           "iso": "zh-CN",
           "name": "中文",
           "files": [
-            "E:/za-workspace/learn/luci-web/i18n/locales/zh-CN.js"
+            "/Users/paulchou/Project/work/luci-web/i18n/locales/zh-CN.js"
           ]
         },
         {
@@ -913,7 +913,7 @@ const _inlineRuntimeConfig = {
           "iso": "en-US",
           "name": "English",
           "files": [
-            "E:/za-workspace/learn/luci-web/i18n/locales/en-US.js"
+            "/Users/paulchou/Project/work/luci-web/i18n/locales/en-US.js"
           ]
         }
       ],
@@ -993,7 +993,7 @@ new Proxy(/* @__PURE__ */ Object.create(null), {
   }
 });
 
-const serverAssets = [{"baseName":"server","dir":"E:/za-workspace/learn/luci-web/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"/Users/paulchou/Project/work/luci-web/server/assets"}];
 
 const assets = createStorage();
 
@@ -1005,11 +1005,11 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets);
 
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"E:/za-workspace/learn/luci-web","watchOptions":{"ignored":[null]}}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"E:/za-workspace/learn/luci-web/server","watchOptions":{"ignored":[null]}}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"E:/za-workspace/learn/luci-web/.nuxt"}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"E:/za-workspace/learn/luci-web/.nuxt/cache"}));
-storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"E:/za-workspace/learn/luci-web/.data/kv"}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/paulchou/Project/work/luci-web","watchOptions":{"ignored":[null]}}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/paulchou/Project/work/luci-web/server","watchOptions":{"ignored":[null]}}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/paulchou/Project/work/luci-web/.nuxt"}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/paulchou/Project/work/luci-web/.nuxt/cache"}));
+storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"/Users/paulchou/Project/work/luci-web/.data/kv"}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -1626,6 +1626,11 @@ function getRouteRulesForPath(path) {
   return defu({}, ..._routeRulesMatcher.matchAll(path).reverse());
 }
 
+getContext("nitro-app", {
+  asyncContext: false,
+  AsyncLocalStorage: void 0
+});
+
 const scheduledTasks = false;
 
 const tasks = {
@@ -1677,7 +1682,7 @@ function publicAssetsURL(...path) {
 
 const warnOnceSet = /* @__PURE__ */ new Set();
 const DEFAULT_ENDPOINT = "https://api.iconify.design";
-const _w91Eic = defineCachedEventHandler(async (event) => {
+const _Uc2prm = defineCachedEventHandler(async (event) => {
   const url = getRequestURL(event);
   if (!url)
     return createError({ status: 400, message: "Invalid icon request" });
@@ -1735,12 +1740,12 @@ const _w91Eic = defineCachedEventHandler(async (event) => {
   // 1 week
 });
 
-const _lazy_2T4XrX = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_fuiO4b = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/__nuxt_error', handler: _lazy_2T4XrX, lazy: true, middleware: false, method: undefined },
-  { route: '/api/_nuxt_icon/:collection', handler: _w91Eic, lazy: false, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_2T4XrX, lazy: true, middleware: false, method: undefined }
+  { route: '/__nuxt_error', handler: _lazy_fuiO4b, lazy: true, middleware: false, method: undefined },
+  { route: '/api/_nuxt_icon/:collection', handler: _Uc2prm, lazy: false, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_fuiO4b, lazy: true, middleware: false, method: undefined }
 ];
 
 function _captureError(error, type) {
@@ -2045,8 +2050,8 @@ function resolveUnrefHeadInput(input) {
 
 const APP_ROOT_OPEN_TAG = `<${appRootTag}${propsToString(appRootAttrs)}>`;
 const APP_ROOT_CLOSE_TAG = `</${appRootTag}>`;
-const getClientManifest = () => import('file://E:/za-workspace/learn/luci-web/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
-const getServerEntry = () => import('file://E:/za-workspace/learn/luci-web/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getClientManifest = () => import('file:///Users/paulchou/Project/work/luci-web/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getServerEntry = () => import('file:///Users/paulchou/Project/work/luci-web/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
 const getSSRStyles = lazyCachedFunction(() => Promise.resolve().then(function () { return styles$1; }).then((r) => r.default || r));
 const getSSRRenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();

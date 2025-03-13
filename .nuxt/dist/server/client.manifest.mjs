@@ -1,1 +1,1 @@
-export { default } from "file:///E:/za-workspace/learn/luci-web/node_modules/.pnpm/@nuxt+vite-builder@3.16.0_@types+node@18.19.80_eslint@9.22.0_jiti@2.4.2__lightningcss@1.29.2__v3qpwuag4ih5xgzs3wjlcgalkq/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
+export { default } from "file:///Users/paulchou/Project/work/luci-web/node_modules/.pnpm/@nuxt+vite-builder@3.16.0_@types+node@18.19.80_eslint@9.22.0_rollup@4.35.0_sass-embedded@1.85_t24zbekgtlug4zspdetpvnlia4/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"

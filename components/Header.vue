@@ -56,7 +56,7 @@
   });
   const menus = ref([
     {
-      label: 'Guide',
+      label: '首页',
       icon: 'i-lucide-book-open',
       to: '/getting-started',
       children: [
@@ -88,7 +88,7 @@
       ]
     },
     {
-      label: 'Composables',
+      label: '关于卢瓷',
       icon: 'i-lucide-database',
       to: '/composables',
       children: [
@@ -113,35 +113,91 @@
       ]
     },
     {
-      label: 'Components',
+      label: '产品展示',
       icon: 'i-lucide-box',
       to: '/components',
       active: true,
       children: [
         {
-          label: 'Link',
+          label: 'Popover',
           icon: 'i-lucide-file-text',
-          description: 'Use NuxtLink with superpowers.',
-          to: '/components/link'
+          description: 'Display a non-modal dialog that floats around a trigger element.',
+          to: '/components/popover'
         },
         {
-          label: 'Modal',
+          label: 'Progress',
           icon: 'i-lucide-file-text',
-          description: 'Display a modal within your application.',
-          to: '/components/modal'
+          description: 'Show a horizontal bar to indicate task progression.',
+          to: '/components/progress'
+        }
+      ]
+    },
+    {
+      label: '应用领域',
+      icon: 'i-lucide-box',
+      to: '/components',
+      active: true,
+      children: [
+        {
+          label: 'Popover',
+          icon: 'i-lucide-file-text',
+          description: 'Display a non-modal dialog that floats around a trigger element.',
+          to: '/components/popover'
         },
         {
-          label: 'NavigationMenu',
+          label: 'Progress',
           icon: 'i-lucide-file-text',
-          description: 'Display a list of links.',
-          to: '/components/navigation-menu'
+          description: 'Show a horizontal bar to indicate task progression.',
+          to: '/components/progress'
+        }
+      ]
+    },
+    {
+      label: '技术与研发',
+      icon: 'i-lucide-box',
+      to: '/components',
+      active: true,
+      children: [
+        {
+          label: 'Popover',
+          icon: 'i-lucide-file-text',
+          description: 'Display a non-modal dialog that floats around a trigger element.',
+          to: '/components/popover'
         },
         {
-          label: 'Pagination',
+          label: 'Progress',
           icon: 'i-lucide-file-text',
-          description: 'Display a list of pages.',
-          to: '/components/pagination'
+          description: 'Show a horizontal bar to indicate task progression.',
+          to: '/components/progress'
+        }
+      ]
+    },
+    {
+      label: '新闻与媒体',
+      icon: 'i-lucide-box',
+      to: '/components',
+      active: true,
+      children: [
+        {
+          label: 'Popover',
+          icon: 'i-lucide-file-text',
+          description: 'Display a non-modal dialog that floats around a trigger element.',
+          to: '/components/popover'
         },
+        {
+          label: 'Progress',
+          icon: 'i-lucide-file-text',
+          description: 'Show a horizontal bar to indicate task progression.',
+          to: '/components/progress'
+        }
+      ]
+    },
+    {
+      label: '联系我们',
+      icon: 'i-lucide-box',
+      to: '/components',
+      active: true,
+      children: [
         {
           label: 'Popover',
           icon: 'i-lucide-file-text',

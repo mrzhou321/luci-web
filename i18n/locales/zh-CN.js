@@ -10,13 +10,14 @@ export default {
     },
     nav: {
       home: '首页',
-      about: '公司简介',
-      products: '产品中心',
-      news: '新闻中心',
+      about: '关于卢瓷',
+      products: '产品展示',
+      apply: '应用领域',
+      news: '新闻与媒体',
       contact: '联系我们',
-      downloads: '下载中心',
-      services: '客户服务',
-      aboutUs: '关于我们'
+      technology: '技术与研发',
+      cement: "水泥",
+      concrete: "混凝土"
     },
     company: {
       name: '合肥庐瓷环保科技有限公司',

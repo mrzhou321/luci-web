@@ -18,22 +18,11 @@
           <UInput trailing-icon="i-lucide-search" size="md" variant="outline" :placeholder="search.placeholder" />
         </div>
       </div>
-      <nav class="flex-c w-full h-14 bg-white border-t border-t-primary-50">
-        <div class="main-container">
-          <UNavigationMenu trailing-icon="i-lucide-arrow-down" :items="menus" class="w-full justify-start" />
+      <div class="flex-c w-full h-14 bg-white border-t border-t-primary-50">
+        <div class="main-container h-full">
+          <UNavigationMenu contentOrientation="vertical"  :ui="navMenuUi" trailing-icon="i-lucide-arrow-down" :items="menus" class="w-full h-full justify-start" />
         </div>
-
-<!--        <ul class="flex-c justify-between h-14">-->
-<!--          <li><NuxtLink to="/">{{ $t('nav.home') }}</NuxtLink></li>-->
-<!--          <li><NuxtLink to="/about">{{ $t('nav.about') }}</NuxtLink></li>-->
-<!--          <li><NuxtLink to="/products">{{ $t('nav.products') }}</NuxtLink></li>-->
-<!--          <li><NuxtLink to="/news">{{ $t('nav.news') }}</NuxtLink></li>-->
-<!--          <li><NuxtLink to="/contact">{{ $t('nav.contact') }}</NuxtLink></li>-->
-<!--          <li><NuxtLink to="/downloads">{{ $t('nav.downloads') }}</NuxtLink></li>-->
-<!--          <li><NuxtLink to="/services">{{ $t('nav.services') }}</NuxtLink></li>-->
-<!--          <li><NuxtLink to="/about">{{ $t('nav.aboutUs') }}</NuxtLink></li>-->
-<!--        </ul>-->
-      </nav>
+      </div>
     </header>
   </template>
 
@@ -54,163 +43,50 @@
   const search = reactive({
     placeholder: t('header.search')
   });
+  const navMenuUi = {
+
+    // 自定义菜单项的样式
+  }
+
   const menus = ref([
     {
-      label: '首页',
-      icon: 'i-lucide-book-open',
-      to: '/getting-started',
-      children: [
-        {
-          label: 'Introduction',
-          description: 'Fully styled and customizable components for Nuxt.',
-          icon: 'i-lucide-house'
-        },
-        {
-          label: 'Installation',
-          description: 'Learn how to install and configure Nuxt UI in your application.',
-          icon: 'i-lucide-cloud-download'
-        },
-        {
-          label: 'Icons',
-          icon: 'i-lucide-smile',
-          description: 'You have nothing to do, @nuxt/icon will handle it automatically.'
-        },
-        {
-          label: 'Colors',
-          icon: 'i-lucide-swatch-book',
-          description: 'Choose a primary and a neutral color from your Tailwind CSS theme.'
-        },
-        {
-          label: 'Theme',
-          icon: 'i-lucide-cog',
-          description: 'You can customize components by using the `class` / `ui` props or in your app.config.ts.'
-        }
-      ]
-    },
-    {
-      label: '关于卢瓷',
-      icon: 'i-lucide-database',
-      to: '/composables',
-      children: [
-        {
-          label: 'defineShortcuts',
-          icon: 'i-lucide-file-text',
-          description: 'Define shortcuts for your application.',
-          to: '/composables/define-shortcuts'
-        },
-        {
-          label: 'useOverlay',
-          icon: 'i-lucide-file-text',
-          description: 'Display a modal/slideover within your application.',
-          to: '/composables/use-overlay'
-        },
-        {
-          label: 'useToast',
-          icon: 'i-lucide-file-text',
-          description: 'Display a toast within your application.',
-          to: '/composables/use-toast'
-        }
-      ]
-    },
-    {
-      label: '产品展示',
-      icon: 'i-lucide-box',
-      to: '/components',
+      label: t("nav.home"),
       active: true,
+      to: '/',
+    },
+    {
+      label: t("nav.about"),
+      to: '/about',
+    },
+    {
+      label: t("nav.products"),
+      to: '/products',
       children: [
         {
-          label: 'Popover',
-          icon: 'i-lucide-file-text',
-          description: 'Display a non-modal dialog that floats around a trigger element.',
-          to: '/components/popover'
+          label: t("nav.cement"),
+          to: '/products/cement'
         },
         {
-          label: 'Progress',
-          icon: 'i-lucide-file-text',
-          description: 'Show a horizontal bar to indicate task progression.',
-          to: '/components/progress'
+          label: t("nav.concrete"),
+          to: '/products/concrete'
         }
       ]
     },
     {
-      label: '应用领域',
-      icon: 'i-lucide-box',
-      to: '/components',
-      active: true,
-      children: [
-        {
-          label: 'Popover',
-          icon: 'i-lucide-file-text',
-          description: 'Display a non-modal dialog that floats around a trigger element.',
-          to: '/components/popover'
-        },
-        {
-          label: 'Progress',
-          icon: 'i-lucide-file-text',
-          description: 'Show a horizontal bar to indicate task progression.',
-          to: '/components/progress'
-        }
-      ]
+      label: t("nav.apply"),
+      to: '/apply',
     },
     {
-      label: '技术与研发',
-      icon: 'i-lucide-box',
-      to: '/components',
-      active: true,
-      children: [
-        {
-          label: 'Popover',
-          icon: 'i-lucide-file-text',
-          description: 'Display a non-modal dialog that floats around a trigger element.',
-          to: '/components/popover'
-        },
-        {
-          label: 'Progress',
-          icon: 'i-lucide-file-text',
-          description: 'Show a horizontal bar to indicate task progression.',
-          to: '/components/progress'
-        }
-      ]
+      label: t("nav.technology"),
+      to: '/tech'
     },
     {
-      label: '新闻与媒体',
-      icon: 'i-lucide-box',
-      to: '/components',
-      active: true,
-      children: [
-        {
-          label: 'Popover',
-          icon: 'i-lucide-file-text',
-          description: 'Display a non-modal dialog that floats around a trigger element.',
-          to: '/components/popover'
-        },
-        {
-          label: 'Progress',
-          icon: 'i-lucide-file-text',
-          description: 'Show a horizontal bar to indicate task progression.',
-          to: '/components/progress'
-        }
-      ]
+      label: t("nav.news"),
+      to: '/news',
     },
     {
-      label: '联系我们',
-      icon: 'i-lucide-box',
-      to: '/components',
-      active: true,
-      children: [
-        {
-          label: 'Popover',
-          icon: 'i-lucide-file-text',
-          description: 'Display a non-modal dialog that floats around a trigger element.',
-          to: '/components/popover'
-        },
-        {
-          label: 'Progress',
-          icon: 'i-lucide-file-text',
-          description: 'Show a horizontal bar to indicate task progression.',
-          to: '/components/progress'
-        }
-      ]
+      label: t("nav.contact"),
+      to: '/contact'
     }
   ]);
   function switchLanguage(lang: string) {
@@ -225,9 +101,6 @@
   .logo{
     width: 1000px;
     padding: 0 20px;
-  }
-  nav {
-    height: 44px;
   }
   ul {
     width: 1000px;

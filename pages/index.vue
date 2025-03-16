@@ -1,9 +1,9 @@
 <template>
     <div class="website flex-c flex-col">
       <Header />
-      <div class="middle flex-c">
-        <UCarousel v-slot="{ item }" dots :items="items" class="w-full max-w-xs mx-auto">
-          <img :src="item" width="320" height="320" class="rounded-lg">
+      <div class="middle flex-c bg-white relative">
+        <UCarousel v-slot="{ item }" dots :items="items" class="w-full">
+          <img :src="item" width="100%" height="600px">
         </UCarousel>
       </div>
       <Footer />
@@ -27,17 +27,12 @@
 
   <style lang="scss" scoped>
   .website{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     color: #666666;
     background:#EEE;
     .middle{
       width: 100%;
-      height: calc(100% - 160px);
-      background-image: url(../assets/img/bg.webp);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
     }
     .main{
       width: 1000px;

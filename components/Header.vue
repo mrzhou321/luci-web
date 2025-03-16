@@ -18,7 +18,7 @@
           <UInput trailing-icon="i-lucide-search" size="md" variant="outline" :placeholder="search.placeholder" />
         </div>
       </div>
-      <div class="flex-c w-full h-14 bg-white border-t border-t-primary-50">
+      <div class="flex-c w-full h-14 bg-white border-t border-t-gray-300">
         <div class="main-container h-full">
           <UNavigationMenu contentOrientation="vertical"  :ui="navMenuUi" trailing-icon="i-lucide-arrow-down" :items="menus" class="w-full h-full justify-start" />
         </div>

@@ -26,6 +26,11 @@ export default {
     home: {
       welcome: '欢迎来到合肥庐瓷环保科技有限公司官方网站'
     },
+    footer:{
+      service: '服务热线',
+      address: '地址',
+      email: '邮箱'
+    },
     about: {
       culture: '我们坚持以客户为中心，以质量为生命，以创新为动力，致力于为客户提供最优质的产品和服务。',
       history: [
@@ -126,6 +131,9 @@ export default {
       ]
     },
     contact: {
+      dz: "地址：",
+      lxdh: "联系电话：",
+      yx: "邮箱：",
       address: '安徽省合肥市长丰县新城路与金博路交叉口天成大厦20楼',
       phone: '15395024880',
       email: "luclkejh88{'@'}sina.com"

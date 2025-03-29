@@ -2,9 +2,11 @@
     <div class="website flex-c flex-col">
       <Header />
       <div class="middle flex-c bg-white relative">
-        <UCarousel v-slot="{ item }" dots :items="items" class="w-full">
-          <img :src="item" width="100%" height="600px">
-        </UCarousel>
+        <el-carousel height="600px" class="w-full">
+          <el-carousel-item v-for="item in items" :key="item">
+            <el-image :src="item" class="size-full" alt="" :fit="'contain'" lazy/>
+          </el-carousel-item>
+        </el-carousel>
       </div>
       <Footer />
     </div>
@@ -13,15 +15,15 @@
   <script lang="ts" setup>
    import Header from '~/components/Header.vue'
    import Footer from '~/components/Footer.vue'
+   import Home01 from  "~/assets/img/home_01.jpg"
+   import Home02 from  "~/assets/img/home_02.jpg"
+   import Home03 from  "~/assets/img/home_03.jpg"
    import ProductList from '~/components/ProductList.vue'
    const { t, rt } = useI18n();
    const items = [
-     'https://picsum.photos/640/640?random=1',
-     'https://picsum.photos/640/640?random=2',
-     'https://picsum.photos/640/640?random=3',
-     'https://picsum.photos/640/640?random=4',
-     'https://picsum.photos/640/640?random=5',
-     'https://picsum.photos/640/640?random=6'
+    Home01,
+    Home02,
+     Home03,
    ];
   </script>
 
@@ -33,9 +35,6 @@
     background:#EEE;
     .middle{
       width: 100%;
-    }
-    .main{
-      width: 1000px;
     }
   }
 

@@ -8,9 +8,12 @@
   },
   "dependencies": {
     "@nuxt/ui": "^3.0.0",
+    "element-plus": "^2.9.7",
     "nuxt": "latest"
   },
   "devDependencies": {
+    "@element-plus/nuxt": "^1.1.1",
+    "@intlify/message-compiler": "^11.1.2",
     "@nuxtjs/i18n": "^9.2.1",
     "@nuxtjs/tailwindcss": "^6.13.1",
     "@tailwindcss/postcss": "^4.0.13",

@@ -7,7 +7,8 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxtjs/i18n',
-    '@nuxt/ui'
+    '@nuxt/ui',
+    '@element-plus/nuxt'
   ],
   i18n: {
     locales: [
@@ -18,7 +19,9 @@ export default defineNuxtConfig({
     lazy: true,
     langDir: 'locales/'
   },
-
+  elementPlus: {
+    defaultLocale: "zh-cn"
+  },
   css: [
     '~/assets/css/main.css'
   ],
@@ -29,6 +32,12 @@ export default defineNuxtConfig({
     plugins: [
       tailwindcss(),
     ],
+    optimizeDeps: {
+      include: ['@intlify/message-compiler']
+    },
+    ssr: {
+      noExternal: ['@intlify/message-compiler']
+    }
   },
   compatibilityDate: '2025-02-24',
 

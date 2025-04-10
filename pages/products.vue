@@ -1,28 +1,90 @@
 <template>
-    <div>
+    <div class="website">
       <Header />
-      <main>
-        <div>
-
+      <div class="middle flex-c flex-col bg-white relative">
+        <div class="search flex-c">
+          <el-image :src="HeaderImg" class="search-bg" alt=""></el-image>
+          <div class="flex-c">
+            <div>{{t("products.searchTitle")}}</div>
+            <el-input
+                v-model="data.serachKey"
+                style="width: 240px"
+                size="large"
+                :placeholder="data.serachPlaceholder"
+                :suffix-icon="Search"
+            />
+          </div>
         </div>
-        <h1>{{ $t('nav.products') }}</h1>
-        <div class="product-list">
-          <ProductCard
-            v-for="product in $tm('products.productList')"
-            :key="$rt(product.id)"
-            :product="product"
-          />
+        <div class="container flex mt-10">
+          <div class="category flex flex-col p-4">
+            <div class="text-2xl text-primary-500 h-12">
+              {{t("products.category")}}
+            </div>
+            <div class="category-item flex  h-12 cursor-pointer" v-for="category in $tm('products.categoryList')">
+               <div class="flex-c">{{$rt(category.title)}}</div>
+            </div>
+          </div>
+          <div class="flex-1 product-list flex flex-wrap justify-between">
+            <ProductCard
+                v-for="product in data.productList"
+                :key="$rt(product.id)"
+                :product="product"
+            />
+          </div>
         </div>
-      </main>
+      </div>
       <Footer />
     </div>
 </template>
 
   <script lang="ts" setup>
+  import { Search } from '@element-plus/icons-vue'
+  import HeaderImg from '~/assets/img/home_01.jpg'
    import Header from '~/components/Header.vue'
    import Footer from '~/components/Footer.vue'
    import ProductCard from '~/components/ProductCard.vue'
    import { useI18n } from 'vue-i18n'
-   const { t, rt } = useI18n();
-   console.log(rt('products.productList'));
+   import { reactive } from 'vue'
+   const { t, rt,tm } = useI18n();
+   console.log(tm('products.productList'));
+   const data = reactive({
+    searchKey: '',
+     serachPlaceholder: t('products.search'),
+     curCategory: "hnt",
+     productList: tm('products.categoryList[0].children')
+  });
   </script>
+
+<style  lang="scss" scoped>
+.website{
+  height: 100%;
+  width: 100%;
+  color: #666666;
+  background:#EEE;
+}
+
+.search{
+  width: 100%;
+  height:400px;
+  position: relative;
+  .search-bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+.container{
+  width: 1200px;
+}
+.category{
+  width: 300px;
+  height: 420px;
+  background-color: rgb(238, 238, 238);
+  .category-item{
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+  }
+}
+</style>

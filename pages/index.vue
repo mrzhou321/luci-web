@@ -34,7 +34,7 @@
     color: #666666;
     background:#EEE;
     .middle{
-      width: 100%;
+      width: 1200px;
     }
   }
 

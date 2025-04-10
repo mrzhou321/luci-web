@@ -1,27 +1,41 @@
 <template>
-    <div class="product-card">
-      <h3>{{ $rt(product.name) }}</h3>
-      <p>{{ $rt(product.description) }}</p>
-      <ul>
-        <li v-for="(value, key) in product.spec" :key="key">
-          <strong>{{ $rt(key)}}:</strong> {{ $rt(value) }}
-        </li>
-      </ul>
+    <div class="product-card flex-c flex-col" v-if="product">
+      <img class="pt-icon" :src="data.images[rt(product.id) + '.jpg']" alt="" />
+      <div>{{ $rt(product.name) }}</div>
     </div>
   </template>
-  
+
   <script lang="ts" setup>
-  defineProps<{ product: any }>()
+  import {computed, reactive} from "vue";
+  import {useI18n} from "vue-i18n";
+
+  const { product } = defineProps<{
+    product: any;
+  }>();
+  const { t, rt,tm } = useI18n();
+  const data = reactive({
+    images: [] as string[]
+  })
+  const imageModules = import.meta.glob('~/assets/img/products/*.{jpg,png,gif}');
+  for (const path in imageModules) {
+    const fileName = path.split('/').pop(); // 获取文件名
+    imageModules[path]().then((mod) => {
+      data.images[fileName] = mod.default;
+    });
+  }
   </script>
-  
-  <style scoped>
+
+  <style lang="scss" scoped>
   .product-card {
     border: 1px solid #ddd;
     padding: 15px;
     margin-bottom: 20px;
+    .pt-icon {
+      width: 400px;
+      height: 400px;
+    }
   }
   .product-card h3 {
     margin-bottom: 10px;
   }
   </style>
-  

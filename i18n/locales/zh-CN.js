@@ -56,78 +56,95 @@ export default {
       ]
     },
     products: {
+      search: '请输入关键词',
+      searchTitle: "您可以搜索产品",
+      category: '产品分类',
+      categoryList: [
+        {
+          title: "混凝土",
+          key: "hnt",
+          children: [
+            {
+              id: 'EA100',
+              name: '混凝土用功能性助剂 EA100 功能性单体',
+              description: '一种具有亲水基团构架、羟基和羧基活性双键的聚氨酯单体，显著提高聚氨酯的聚合性能和抗氧化性能。',
+              spec: {
+                appearance: '无色透明液体',
+                density: '1.11.3',
+                acidValue: '2.4',
+                package: '200公斤白色塑料桶包装，保质期6个月'
+              }
+            },
+            {
+              id: 'H200',
+              name: 'H200 还原剂',
+              description: '不含甲醛的脱氢还原剂，适用于减水剂合成中的氧化-还原催化体系。',
+              spec: {
+                active: "≥98{'%'}",
+                appearance: '白色粉末',
+                package: '20公斤包装，保质期12个月'
+              }
+            },
+            {
+              id: 'L0900',
+              name: 'L0900 和易性调节剂',
+              description: '聚丙烯酰胺专用和易性调节剂，改善混凝土的和易性。',
+              spec: {
+                color: '白色或淡黄色',
+                density: '1.01-1.04',
+                package: '1000公斤塑料袋包装'
+              }
+            },
+            {
+              id: 'LC-K535',
+              name: 'LC-K535 抗泥调节剂',
+              description: '减少粘土及水泥水化物对水的影响，提高混凝土稳定性。',
+              spec: {
+                content: "40±1{'%'}",
+                chloride: "≤0.05{'%'}",
+                package: '塑料桶包装，保质期6个月'
+              }
+            },
+          ]
+        },
+        {
+          title: "砂浆",
+          key: "sj",
+          children: [
+            {
+              id: 'LC-R500',
+              name: 'LC-R500 降粘母液',
+              description: '原胶膜被聚合物，适用于长距离泵送要求的混凝土。',
+              spec: {
+                content: "40±1{'%'}",
+                waterReduction: "≥25{'%'}",
+                package: '1000公斤塑料桶包装，保质期6个月'
+              }
+            },
+            {
+              id: 'LC-XP770',
+              name: 'LC-XP770 有机消泡剂',
+              description: '适合高乳化剂含量体系，能有效抑制氧化物，维持体系稳定性。',
+              spec: {
+                appearance: '白色及淡黄色液体',
+                ph: '5-8',
+                package: '25kg/200kg塑料桶包装，保质期6个月'
+              }
+            },
+            {
+              id: 'LC-XP780',
+              name: 'LC-XP780 聚酰亚胺消泡剂',
+              description: '由改性聚酰多元醇、分散剂、乳化剂等组成，具有良好消泡及抑泡性能。',
+              spec: {
+                appearance: '透明液体',
+                ph: '5-8',
+                package: '25kg/200kg塑料桶包装，保质期6个月'
+              }
+            }
+          ]
+        },
+      ],
       productList: [
-        {
-          id: 'EA100',
-          name: '混凝土用功能性助剂 EA100 功能性单体',
-          description: '一种具有亲水基团构架、羟基和羧基活性双键的聚氨酯单体，显著提高聚氨酯的聚合性能和抗氧化性能。',
-          spec: {
-            appearance: '无色透明液体',
-            density: '1.11.3',
-            acidValue: '2.4',
-            package: '200公斤白色塑料桶包装，保质期6个月'
-          }
-        },
-        {
-          id: 'H200',
-          name: 'H200 还原剂',
-          description: '不含甲醛的脱氢还原剂，适用于减水剂合成中的氧化-还原催化体系。',
-          spec: {
-            active: "≥98{'%'}",
-            appearance: '白色粉末',
-            package: '20公斤包装，保质期12个月'
-          }
-        },
-        {
-          id: 'L0900',
-          name: 'L0900 和易性调节剂',
-          description: '聚丙烯酰胺专用和易性调节剂，改善混凝土的和易性。',
-          spec: {
-            color: '白色或淡黄色',
-            density: '1.01-1.04',
-            package: '1000公斤塑料袋包装'
-          }
-        },
-        {
-          id: 'LC-K535',
-          name: 'LC-K535 抗泥调节剂',
-          description: '减少粘土及水泥水化物对水的影响，提高混凝土稳定性。',
-          spec: {
-            content: "40±1{'%'}",
-            chloride: "≤0.05{'%'}",
-            package: '塑料桶包装，保质期6个月'
-          }
-        },
-        {
-          id: 'LC-R500',
-          name: 'LC-R500 降粘母液',
-          description: '原胶膜被聚合物，适用于长距离泵送要求的混凝土。',
-          spec: {
-            content: "40±1{'%'}",
-            waterReduction: "≥25{'%'}",
-            package: '1000公斤塑料桶包装，保质期6个月'
-          }
-        },
-        {
-          id: 'LC-XP770',
-          name: 'LC-XP770 有机消泡剂',
-          description: '适合高乳化剂含量体系，能有效抑制氧化物，维持体系稳定性。',
-          spec: {
-            appearance: '白色及淡黄色液体',
-            ph: '5-8',
-            package: '25kg/200kg塑料桶包装，保质期6个月'
-          }
-        },
-        {
-          id: 'LC-XP780',
-          name: 'LC-XP780 聚酰亚胺消泡剂',
-          description: '由改性聚酰多元醇、分散剂、乳化剂等组成，具有良好消泡及抑泡性能。',
-          spec: {
-            appearance: '透明液体',
-            ph: '5-8',
-            package: '25kg/200kg塑料桶包装，保质期6个月'
-          }
-        }
       ]
     },
     contact: {

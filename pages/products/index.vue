@@ -24,7 +24,7 @@
                <div class="flex-c">{{$rt(category.title)}}</div>
             </div>
           </div>
-          <div class="flex-1 product-list flex flex-wrap justify-between">
+          <div class="flex-1 product-list flex flex-wrap justify-between ml-4">
             <ProductCard
                 v-for="product in data.productList"
                 :key="$rt(product.id)"

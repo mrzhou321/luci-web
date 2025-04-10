@@ -1,5 +1,5 @@
 <template>
-    <div class="product-card flex-c flex-col" v-if="product">
+    <div class="product-card flex-c flex-col" v-if="product" @click="showDetail(product)">
       <img class="pt-icon" :src="data.images[rt(product.id) + '.jpg']" alt="" />
       <div>{{ $rt(product.name) }}</div>
     </div>
@@ -8,6 +8,8 @@
   <script lang="ts" setup>
   import {computed, reactive} from "vue";
   import {useI18n} from "vue-i18n";
+  import {navigateTo} from "nuxt/app";
+
 
   const { product } = defineProps<{
     product: any;
@@ -22,6 +24,9 @@
     imageModules[path]().then((mod) => {
       data.images[fileName] = mod.default;
     });
+  }
+  function showDetail(item) {
+    navigateTo(`/products/${rt(item.id)}`);
   }
   </script>
 

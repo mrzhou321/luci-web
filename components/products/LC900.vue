@@ -21,7 +21,7 @@
         </div>
     </div>
     <h3 class="mb-2">三、注意事项</h3>
-    <ol class="leading-6 mb-2">
+    <ol class="leading-6 mb-2 list-decimal">
         <li>
           对于含粉高的机制砂中加入本产品可以有效改善混凝土浆体发粘、浆体下沉的情况，有效的提高了混凝土浆体的稳定性和匀质性。
         </li>
@@ -31,7 +31,7 @@
     </ol>
 
     <h3 class="mb-2">四、包装规格及贮运</h3>
-  <ol class="leading-6 mb-2">
+  <ol class="leading-6 mb-2 list-decimal">
     <li>本系列产品用 1000 公斤塑料桶包装。</li>
     <li>本系列产品应存放于阴凉干燥处。</li>
     <li>本系列产品有效期 6 个月，到期经检验合格后方可使用。</li>
@@ -63,5 +63,11 @@
     .icon{
         width: 364px;
         height: 274px;
+    }
+    ol,ul{
+      padding-left: 40px;
+      li {
+        margin-bottom: 8px;
+      }
     }
 </style>

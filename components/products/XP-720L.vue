@@ -39,7 +39,7 @@
     体用量请根据现场实际效果适当调整。
   </p>
     <h3 class="mb-2">六、包装与贮运</h3>
-  <ol class="leading-6 mb-2">
+  <ol class="leading-6 mb-2 list-decimal">
     <li>本系列产品可根据用户要求使用 25kg 编织袋装，也可根据实际情况定制。 </li>
     <li>本系列产品应存放于阴凉干燥处。 </li>
     <li>本产品有效期1年，到期经检验合格后方可使用。</li>
@@ -66,5 +66,11 @@
     th, td {
         padding: 0.5em;
         text-align: left;
+    }
+    ol,ul{
+      padding-left: 40px;
+      li {
+        margin-bottom: 8px;
+      }
     }
 </style>

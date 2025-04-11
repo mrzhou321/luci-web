@@ -99,6 +99,11 @@ export default {
               name: 'LC-XP780 聚酰亚胺消泡剂',
               description: '由改性聚酰多元醇、分散剂、乳化剂等组成，具有良好消泡及抑泡性能。',
             },
+            {
+              id: 'LC-Y600',
+              name: 'LC-Y600 液体引气剂',
+              description: '配制各种混凝土早强型、标准型、缓凝高性能减水剂及高效减水剂、 泵送剂',
+            },
           ]
         },
         {
@@ -106,35 +111,30 @@ export default {
           key: "sj",
           children: [
             {
-              id: 'LC-R500',
-              name: 'LC-R500 降粘母液',
-              description: '原胶膜被聚合物，适用于长距离泵送要求的混凝土。',
-              spec: {
-                content: "40±1{'%'}",
-                waterReduction: "≥25{'%'}",
-                package: '1000公斤塑料桶包装，保质期6个月'
-              }
+              id: 'LC-X720',
+              name: '固体消泡粉 LC-X720',
+              description: '本品系以特种聚醚酯为主要原料，配合多种活性助剂精制而成。'
             },
             {
-              id: 'LC-XP770',
-              name: 'LC-XP770 有机消泡剂',
-              description: '适合高乳化剂含量体系，能有效抑制氧化物，维持体系稳定性。',
-              spec: {
-                appearance: '白色及淡黄色液体',
-                ph: '5-8',
-                package: '25kg/200kg塑料桶包装，保质期6个月'
-              }
+              id: 'LC-F200',
+              name: '聚羧酸高性能减水剂粉剂 LC-F200',
+              description: 'LC-F200是一种由多种高分子化合物聚合而成的链状结构共聚物，经特殊喷雾干燥工艺制备成的粉体分散剂。',
             },
             {
-              id: 'LC-XP780',
-              name: 'LC-XP780 聚酰亚胺消泡剂',
-              description: '由改性聚酰多元醇、分散剂、乳化剂等组成，具有良好消泡及抑泡性能。',
-              spec: {
-                appearance: '透明液体',
-                ph: '5-8',
-                package: '25kg/200kg塑料桶包装，保质期6个月'
-              }
-            }
+              id: 'FS-RJF',
+              name: '可再分散乳胶粉',
+              description: '醋酸乙烯/乙烯基可再分散共聚乳胶粉，本品具有优异的抗皂化性能。',
+            },
+            {
+              id: 'LC-S200',
+              name: '石膏缓凝剂LC-S200',
+              description: 'LC-S200是一种改性氨基酸类粉状高效石膏缓凝剂。',
+            },
+            {
+              id: 'ZSJ',
+              name: '憎水剂',
+              description: '憎水剂为无机盐改性的有机硅烷粉末，是一种用于提高水泥基材料耐水性、抗 渗性的添加剂。',
+            },
           ]
         },
       ],

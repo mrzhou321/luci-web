@@ -20,8 +20,8 @@
             <div class="text-2xl text-primary-500 h-12">
               {{t("products.category")}}
             </div>
-            <div class="category-item flex  h-12 cursor-pointer" v-for="category in $tm('products.categoryList')">
-               <div class="flex-c">{{$rt(category.title)}}</div>
+            <div class="category-item flex  h-12 cursor-pointer" v-for="category in $tm('products.categoryList')" @click="handleCategoryClick(category)">
+               <div class="flex-c" :class="data.curCategory === $rt(category.key) ? 'text-primary-500' : ''">{{$rt(category.title)}}</div>
             </div>
           </div>
           <div class="flex-1 product-list flex flex-wrap justify-between ml-4">
@@ -46,13 +46,17 @@
    import { useI18n } from 'vue-i18n'
    import { reactive } from 'vue'
    const { t, rt,tm } = useI18n();
-   console.log(tm('products.productList'));
+   // console.log(tm('products.productList'));
    const data = reactive({
     searchKey: '',
      serachPlaceholder: t('products.search'),
      curCategory: "hnt",
      productList: tm('products.categoryList[0].children')
   });
+  function handleCategoryClick(category:any){
+      data.curCategory = rt(category.key);
+      data.productList = category.children;
+  }
   </script>
 
 <style  lang="scss" scoped>

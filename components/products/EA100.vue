@@ -29,7 +29,7 @@
     </ul>
 
     <h3 class="mb-2">四、注意事项</h3>
-    <ol class="leading-6 mb-2">
+    <ol class="leading-6 mb-2 list-decimal">
         <li>储存于阴凉、通风的库房，远离火种、热源。</li>
         <li>包装密封，不可与空气接触。</li>
         <li>与碱类分开存放，不应混储。</li>
@@ -66,5 +66,11 @@
     .icon{
         width: 364px;
         height: 274px;
+    }
+    ol,ul{
+      padding-left: 40px;
+      li {
+        margin-bottom: 8px;
+      }
     }
 </style>

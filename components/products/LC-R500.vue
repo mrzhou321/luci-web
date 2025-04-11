@@ -20,13 +20,13 @@
         </div>
     </div>
     <h3 class="mb-2">三、特性</h3>
-    <ul class="mb-2">
+    <ul class="mb-2 list-decimal">
         <li>降低外加剂对混凝土地材的敏感性。</li>
         <li>混凝土柔软不板结、裹浆性能好。</li>
     </ul>
 
     <h3 class="mb-2">四、注意事项</h3>
-    <ol class="leading-6 mb-2">
+    <ol class="leading-6 mb-2 list-decimal">
         <li>
           该母液可与各种减水、保坍母液任意比例搭配，减水率约为减水型母液的70%。
         </li>
@@ -65,5 +65,11 @@
     .icon{
         width: 364px;
         height: 274px;
+    }
+    ol,ul{
+      padding-left: 40px;
+      li {
+        margin-bottom: 8px;
+      }
     }
 </style>

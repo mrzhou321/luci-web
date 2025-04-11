@@ -20,13 +20,13 @@
         </div>
     </div>
     <h3 class="mb-2">三、特性</h3>
-    <ul class="mb-2">
+    <ul class="mb-2 list-decimal">
         <li>抗泥剂同混凝土减水剂（萘磺酸盐或聚羧酸）相容性好。</li>
         <li>既可以单独使用，又可以与减水剂复配在一起使用。</li>
     </ul>
 
     <h3 class="mb-2">四、注意事项</h3>
-    <ol class="leading-6 mb-2">
+    <ol class="leading-6 mb-2 list-decimal">
         <li>储存于阴凉、通风的库房，远离火种、热源。</li>
         <li>包装要求密封。</li>
         <li>与碱类分开存放，不应混储。</li>
@@ -63,5 +63,11 @@
     .icon{
         width: 364px;
         height: 274px;
+    }
+    ol,ul{
+      padding-left: 40px;
+      li {
+        margin-bottom: 8px;
+      }
     }
 </style>

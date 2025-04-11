@@ -5,8 +5,8 @@
       <div class="search flex-c">
         <el-image :src="HeaderImg" class="search-bg" alt=""></el-image>
       </div>
-      <div class="container flex mt-10">
-
+      <div class="container flex flex-col mt-10 mb-10 leading-6">
+        <component :is="dynamicComponent"></component>
       </div>
     </div>
     <Footer />
@@ -19,8 +19,15 @@ import HeaderImg from '~/assets/img/home_01.jpg'
 import Header from '~/components/Header.vue'
 import Footer from '~/components/Footer.vue'
 import ProductCard from '~/components/ProductCard.vue'
+import { useRoute } from 'vue-router';
 import { useI18n } from 'vue-i18n'
-import { reactive } from 'vue'
+import { reactive,  computed } from 'vue'
+
+const route = useRoute();
+const dynamicComponent = computed(() => {
+  const componentName = route.params.id;
+  return defineAsyncComponent(() => import(`~/components/products/${componentName}.vue`));
+});
 const { t, rt,tm } = useI18n();
 console.log(tm('products.productList'));
 const data = reactive({
@@ -63,4 +70,5 @@ const data = reactive({
     text-align: center;
   }
 }
+
 </style>

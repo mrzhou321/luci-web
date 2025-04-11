@@ -6,6 +6,7 @@
         <el-image :src="HeaderImg" class="search-bg" alt=""></el-image>
       </div>
       <div class="container flex flex-col mt-10 mb-10 leading-6">
+        <div class="title flex"><span class="cursor-pointer" @click="goList">产品展示</span> > {{route.params.id}}</div>
         <component :is="dynamicComponent"></component>
       </div>
     </div>
@@ -22,6 +23,7 @@ import ProductCard from '~/components/ProductCard.vue'
 import { useRoute } from 'vue-router';
 import { useI18n } from 'vue-i18n'
 import { reactive,  computed } from 'vue'
+import {navigateTo} from "nuxt/app";
 
 const route = useRoute();
 const dynamicComponent = computed(() => {
@@ -36,6 +38,9 @@ const data = reactive({
   curCategory: "hnt",
   productList: tm('products.categoryList[0].children')
 });
+function goList(){
+  navigateTo('/products');
+}
 </script>
 
 <style  lang="scss" scoped>
@@ -69,6 +74,19 @@ const data = reactive({
     border-bottom: 1px solid #ccc;
     text-align: center;
   }
+}
+.title {
+  width: 240px;
+  height: 22px;
+  font-family: Microsoft YaHei UI, Microsoft YaHei UI;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+  line-height: 22px;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+  opacity: 0.5;
 }
 
 </style>

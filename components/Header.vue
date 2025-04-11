@@ -31,15 +31,17 @@
           />
         </div>
       </div>
-      <div class="header-tabbar flex-c w-full h-14 bg-white border-t border-t-gray-300">
-        <div class="main-container h-full flex">
-          <template v-for="item in tabbarItems" :key="item.key">
-            <div class="h-full flex-1 w-24  flex-c cursor-pointer text-white text-xl" :class="route.path === item.path ? 'tabbar-active' : ''" @click="changeTabbarKey(item)" >
-               {{item.title}}
+      <el-affix class="w-full">
+        <div class="header-tabbar flex-c w-full h-14 bg-white border-t border-t-gray-300">
+            <div class="main-container h-full flex">
+              <template v-for="item in tabbarItems" :key="item.key">
+                <div class="h-full flex-1 w-24  flex-c cursor-pointer text-white text-xl" :class="route.path === item.path ? 'tabbar-active' : ''" @click="changeTabbarKey(item)" >
+                  {{item.title}}
+                </div>
+              </template>
             </div>
-          </template>
         </div>
-      </div>
+      </el-affix>
     </header>
   </template>
 

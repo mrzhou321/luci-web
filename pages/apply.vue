@@ -1,5 +1,5 @@
 <template>
-    <div>
+  <div class="website flex-c flex-col">
       <Header />
       <main>
         <h1>{{ $t('nav.downloads') }}</h1>
@@ -19,9 +19,8 @@
       <Footer />
     </div>
 </template>
-  
+
 <script lang="ts" setup>
   import Header from '~/components/Header.vue'
   import Footer from '~/components/Footer.vue'
 </script>
-  

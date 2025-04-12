@@ -1,9 +1,9 @@
 <template>
-    <div>
+  <div class="website flex-c flex-col">
       <Header></Header>
-      <div class="middle flex-c flex-col bg-white relative">
+      <div class="middle  flex-c flex-col bg-white relative">
         <el-image :src="HeaderImg" style="width: 100%;height:400px;" alt=""></el-image>
-        <div class="flex about container mt-10">
+        <div class="flex about container mt-10 mb-10">
           <el-image class="bg" :src="BgImg" alt=""></el-image>
           <div class="flex-1  ml-4">
             <h2>
@@ -33,6 +33,16 @@
 </script>
 
 <style lang="scss" scoped>
+.website{
+  height: 100%;
+  width: 100%;
+  color: #666666;
+  background:#EEE;
+  .middle{
+    background: white;
+    width: 100%;
+  }
+}
   .container{
     width: 1200px;
   }

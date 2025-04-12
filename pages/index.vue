@@ -1,8 +1,8 @@
 <template>
     <div class="website flex-c flex-col">
       <Header />
-      <div class="middle flex-c bg-white relative">
-        <el-carousel height="600px" class="w-full">
+      <div class="flex-c w-full bg-white relative">
+        <el-carousel height="600px" class="middle">
           <el-carousel-item v-for="item in items" :key="item">
             <el-image :src="item" class="size-full" alt="" :fit="'contain'" lazy/>
           </el-carousel-item>

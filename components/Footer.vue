@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full flex-c flex-col">
+    <div class="footer w-full flex-c flex-col">
       <div class="footer-links h-40 w-full flex-c flex-col">
         <div class="flex justify-between h-16 main-container">
           <div class="flex-c">
@@ -12,7 +12,7 @@
           </div>
         </div>
         <div class="border-t border-t-gray-300 w-full"></div>
-        <div class="flex-c justify-between h-16 main-container h-20 text-xs">
+        <div class="flex-c justify-between h-16 main-container h-20 text-sm">
           <div>
             <div class="mb-1">{{$t("company.name")}}</div>
             <div>
@@ -25,22 +25,14 @@
               <span>{{$t("contact.yx") + $t("contact.email")}}</span>
             </div>
           </div>
-          <div>
-            <div class="mb-1">{{$t("company.name")}}</div>
-            <div>
-              <span>{{$t("contact.dz") + $t("contact.address")}}</span>
+          <div class="flex">
+            <div class="flex-c flex-col mr-4">
+              <img :src="QrCodeImg" class="size-12" alt=""/>
+              <div>微信</div>
             </div>
-          </div>
-          <div>
-            <div class="mb-1">{{$t("company.name")}}</div>
-            <div>
-              <span>{{$t("contact.dz") + $t("contact.address")}}</span>
-            </div>
-          </div>
-          <div>
-            <div class="mb-1">{{$t("company.name")}}</div>
-            <div>
-              <span>{{$t("contact.dz") + $t("contact.address")}}</span>
+            <div class="flex-c flex-col">
+              <img :src="QrCodeImg" class="size-12" alt=""/>
+              <div>QQ</div>
             </div>
           </div>
         </div>
@@ -50,6 +42,7 @@
   </template>
 
   <script lang="ts" setup>
+  import QrCodeImg from "../assets/img/QrCode.jpg";
   </script>
 
   <style scoped>

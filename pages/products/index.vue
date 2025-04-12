@@ -17,11 +17,11 @@
         </div>
         <div class="container flex mt-10">
           <div class="category flex flex-col p-4">
-            <div class="text-2xl text-primary-500 h-12">
+            <div class="text-2xl  h-12">
               {{t("products.category")}}
             </div>
             <div class="category-item flex  h-12 cursor-pointer" v-for="category in $tm('products.categoryList')" @click="handleCategoryClick(category)">
-               <div class="flex-c" :class="data.curCategory === $rt(category.key) ? 'text-primary-500' : ''">{{$rt(category.title)}}</div>
+               <div class="flex-c" :class="data.curCategory === $rt(category.key) ? 'text-primary' : ''">{{$rt(category.title)}}</div>
             </div>
           </div>
           <div class="flex-1 product-list flex flex-wrap justify-between ml-4">
